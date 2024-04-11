@@ -1,0 +1,18 @@
+header {
+    background-color: #ed1d24;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+  }
+  
+  header > .brand{
+    background : url("https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+  }
+  
