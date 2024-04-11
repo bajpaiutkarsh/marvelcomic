@@ -6,9 +6,11 @@ import "./App.css";
 function App() {
   return (
     <>
+    <div className="body-container">
       <Header></Header>
       <Characters></Characters>
       <Comics></Comics>
+      </div>
     </>
   );
 }

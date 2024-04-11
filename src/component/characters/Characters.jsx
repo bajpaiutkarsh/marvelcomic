@@ -1,4 +1,8 @@
+import classes from "./Characters.module.css"
 const Characters = () => {
-  return <>Characters</>;
+  return <div className={classes.container}>
+
+  </div>
+  ;
 };
 export default Characters;
