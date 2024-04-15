@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 3rem;
+}
+.carouselConatiner {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    align-items: center;
+}
+.carouselItem {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
