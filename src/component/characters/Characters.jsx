@@ -1,5 +1,5 @@
-import classes from "./Characters.module.css"
-import {useQuery} from "react-query";
+import classes from "./Characters.module.css";
+import { useQuery } from "react-query";
 import Constants, { Utililty } from "../../Constant";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -28,30 +28,19 @@ const Characters = () => {
 
   return (
     <div className={classes.container}>
-      
-        {isLoading ? (
-          <p>Loading characters...</p>
-        ) : error ? (
-          <p>Error: {error.message}</p>
-        ) : (
-          // Access characters from data.data (assuming nested structure)
-          <Carousel>
-
-            { data.data.results.map((character, index) => (
-            <Character key={index} character={character} isSelected={false}></Character>
-          ))
-      }
-         </Carousel>
-          
-         
-        )}
-      
+      {isLoading ? (
+        <p>Loading characters...</p>
+      ) : error ? (
+        <p>Error: {error.message}</p>
+      ) : (
+        // Access characters from data.data (assuming nested structure)
+        <Carousel characters={data.data.results}></Carousel>
+      )}
     </div>
   );
 };
 
 export default Characters;
-
 
 const NextArrow = ({ onClick }) => {
   return (

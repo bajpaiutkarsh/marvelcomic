@@ -1,17 +1,19 @@
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-body{
-    background: url("./images/bg.jpg");
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    
+body {
+  background: url("./images/bg.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
-.body-container{
-    background-color: rgba(53, 49, 49, 0.911);
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
+.body-container {
+  background-color: rgba(53, 49, 49, 0.911);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+.Mui-selected {
+  color: #fff;
+  background-color: rgba(166, 161, 161, 0.911);
 }
