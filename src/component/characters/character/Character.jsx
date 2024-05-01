@@ -9,12 +9,12 @@ const Character = ({ character }) => {
   const selection = useSelector(
     (state) => state.charactersslice.selectedCharacters
   );
-  const isSelected = selection[character.id] ? true : false;
+  const isSelected = selection[character.name] ? true : false;
   const divStyle = {
     backgroundImage: `url(${character["thumbnail"]["path"]}.${character["thumbnail"]["extension"]})`,
   };
   const onCharacterClickHandler = (e) => {
-    dispatcher(CharactersAction.modifyCharactersSelection(character.id));
+    dispatcher(CharactersAction.modifyCharactersSelection(character.name));
   };
   return (
     <div
